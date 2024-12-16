@@ -38,41 +38,41 @@ with page_placeholder.container():
     # Render the wish page
         st.markdown(
             f"""
-            <style>
-            body {{
-                background-color: #f9f9f9; /* Light background for a festive feel */
-            }}
-            .wish-container {{
-                text-align: center;
-                padding: 50px;
-                border-radius: 15px;
-                background: linear-gradient(to bottom, #ff7eb3, #ff758c);
-                color: white;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            }}
-            .wish-container h1 {{
-                font-size: 50px;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }}
-            .wish-container h2 {{
-                font-size: 30px;
-                font-style: italic;
-                margin-top: 5px;
-            }}
-            .wish-container .decorative-line {{
-                width: 80%;
-                height: 2px;
-                background-color: white;
-                margin: 20px auto;
-            }}
-            </style>
-            <div class="wish-container">
-                <h1>🎉 Happy Birthday 🎉</h1>
-                <div class="decorative-line"></div>
-                <h2>{st.session_state.name}</h2>
-            </div>
-            """,
+        <style>
+        body {{
+            background-color: #f0f8ff; /* Alice Blue background */
+        }}
+        .wish-container {{
+            text-align: center;
+            padding: 50px;
+            border-radius: 15px;
+            background: linear-gradient(to bottom, #a2d9ff, #82caff);
+            color: #002d62; /* Navy blue text for contrast */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }}
+        .wish-container h1 {{
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }}
+        .wish-container h2 {{
+            font-size: 30px;
+            font-style: italic;
+            margin-top: 5px;
+        }}
+        .wish-container .decorative-line {{
+            width: 80%;
+            height: 2px;
+            background-color: #002d62; /* Navy blue line */
+            margin: 20px auto;
+        }}
+        </style>
+        <div class="wish-container">
+            <h1>🎉 Happy Birthday 🎉</h1>
+            <div class="decorative-line"></div>
+            <h2>{st.session_state.name}</h2>
+        </div>
+        """,
             unsafe_allow_html=True
         )
 
